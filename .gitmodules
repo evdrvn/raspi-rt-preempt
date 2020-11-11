@@ -1,7 +1,10 @@
 [submodule "linux"]
 	path = linux
 	url = https://github.com/raspberrypi/linux
-	branch = rpi-4.9.y
+	branch = rpi-5.4.y
 [submodule "tools"]
 	path = tools
-	url = https://github.com/raspberrypi/tools.git
+	url = https://github.com/raspberrypi/tools
+[submodule "firmware-nonfree"]
+	path = firmware-nonfree
+	url = https://github.com/RPi-Distro/firmware-nonfree
