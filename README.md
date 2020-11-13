@@ -31,10 +31,15 @@ See also https://www.raspberrypi.org/documentation/linux/kernel/building.md .
     $ source ./setenv-rpi23-32.sh 
 
     ```
+    
+    And, avoiding freezes/crashes, add the folloing to `/boot/cmdline.txt`. (See also https://www.osadl.org/Single-View.111+M5c03315dc57.0.html) 
+    ```
+    dwc_otg.fiq_enable=0 dwc_otg.fiq_fsm_enable=0
+    ```
 
 * For 32-bit Raspberry Pi 4 
 
-    Change Only the following part of the procedure of Raspberry Pi 0/1
+    Change Only the following part of the procedure of Raspberry Pi 2/3/3+
     ```
     $ source ./setenv-rpi4-32.sh 
 
