@@ -23,3 +23,17 @@ See also https://www.raspberrypi.org/documentation/linux/kernel/building.md .
     ```
     $ sudo sh ./deploy.sh
     ```
+
+* For 32-bit Raspberry Pi 2/3/3+, Compute Module 3
+
+    Change Only the following part of the procedure of Raspberry Pi 0/1
+    ```
+    $ source ./setenv-rpi23-32.sh
+
+    ```
+
+    And, avoiding freezes/crashes, add the folloing to `/boot/cmdline.txt`. (See also https://www.osadl.org/Single-View.111+M5c03315dc57.0.html)
+    ```
+    dwc_otg.fiq_enable=0 dwc_otg.fiq_fsm_enable=0
+    ```
+
